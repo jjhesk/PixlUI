@@ -67,7 +67,7 @@ dependencies{
 }
   ```
   
-  Maven Setup
+Maven Setup
 ==========
 
 Add Repository
@@ -90,11 +90,27 @@ Add Dependency:
 How use it ?
 ==========
 
-1 . Import [pixlui.jar](https://github.com/neopixl/PixlUI/releases "pixlui.jar") in your project.
 
-2 . Add your custom fonts in /assets/fonts/
+1. Add your custom fonts in /assets/fonts/
 
-3 . Use it in XML:
+2. Define your fonts in styles.xml
+```xml
+    <style name="AppTheme.TextGearedSlab">
+        <item name="typeface">GearedSlab.ttf</item>
+    </style>
+
+
+    <style name="AppTheme.TextGearedSlab.t1">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="AppTheme.TextGearedSlab.t2">
+        <item name="android:textSize">14sp</item>
+    </style>
+```
+
+3. Use it in XML:
 
 ```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -102,18 +118,27 @@ How use it ?
     xmlns:tools="http://schemas.android.com/tools" >
 
     <com.neopixl.pixlui.components.textview.TextView
+        style="@style/AppTheme.TextGearedSlab.t1"
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         pixlui:copyandpaste="false"
-        pixlui:clearclipboardcontent="true"
-        pixlui:typeface="GearedSlab.ttf" />
+        pixlui:clearclipboardcontent="true"/>
 </RelativeLayout>
 ```
 
 ![Logo](https://raw.github.com/neopixl/PixlUI/master/Sample/res/drawable-xhdpi/small.png ) ChangeLog
 ===
+
+**1.0.6**
+- Upgraded to last build tools
+- *EllipsizingTextView* is now removed from *com.neopixl.pixlui.components.textview*
+
+**1.0.5a (Prerelease)**
+
+- Temp release to fix jitpack.io build
+- include a gradle'ized versin of PixlUI (now a library project)
 
 **1.0.5**
 
@@ -160,7 +185,6 @@ How use it ?
 [Flow] (https://play.google.com/store/apps/details?id=com.metalab.flow)		-
 [W-Zup](https://play.google.com/store/apps/details?id=com.wzup.wzup)  	-       [FLASHiZ](https://play.google.com/store/apps/details?id=com.mobey.android)      -       [MeeTincS](https://play.google.com/store/apps/details?id=com.neopixl.apppixl.meetincs)      -       [Wort.lu](https://play.google.com/store/apps/details?id=lu.wort.main)     -   
 [Hypebeast](https://play.google.com/store/apps/details?id=com.hypebeast.store&hl=en)     -   
-
 
 Copyright
 ==========
