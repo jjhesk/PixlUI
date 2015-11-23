@@ -3,9 +3,9 @@
 
 Provide few methods for visual elements.
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PixlUI-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/166)
-[![JitPackGradle](https://img.shields.io/github/tag/neopixl/PixlUI.svg?label=maven)](https://jitpack.io/#neopixl/PixlUI/)
-[![JitPackMaven](https://img.shields.io/github/tag/neopixl/PixlUI.svg?label=gradle)](https://jitpack.io/#neopixl/PixlUI/)
+[ ![Download](https://api.bintray.com/packages/jjhesk/maven/fontlib/images/download.svg) ](https://bintray.com/jjhesk/maven/fontlib/_latestVersion)
+
+
 
 
 CheckBox:
@@ -54,16 +54,14 @@ Compile with one line easy code!
 ```gradle
 
 repositories {
-    maven {
-        url "https://jitpack.io"
-    }
+     maven { url "http://dl.bintray.com/jjhesk/maven" }
 }
 
 ```
 Compile in the build.gradle file. for X.X.X please refer to the change log.
 ```gradle
 dependencies{
-  compile 'com.github.neopixl:PixlUI:vX.X.X.'
+  compile 'neopixl.pixlui:fontlib:1.0.7'
 }
   ```
   
